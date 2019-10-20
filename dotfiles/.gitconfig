@@ -1,0 +1,12 @@
+[user]
+	name = ashn
+	email = me@ashn.dev
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[commit]
+	template = ~/.gitmessage
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=86400 ; 24-hours

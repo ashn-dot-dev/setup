@@ -1,0 +1,18 @@
+# If this commit is applied it will... (short, 50 characters)
+
+# What change(s) was/were made? How do they address the issue? (long)
+
+# References to tickets/issues/stories (optional)
+# Ex: Fixes issue #1234
+# Ex: WIP update to #3412
+
+########################################################################
+# Remember the 50/72 rule:
+# + First line of your commit (the summary) should be a maximum of 50
+#   characters. This is for `git shortlog`.
+# + All other lines should be a maximum of 72 characters. `git log` adds
+#   four spaces of padding, so to center the message on an 80 col
+#   terminal, there should be space for four more blank spaces on the
+#   right side.
+#   (80 - 4 - 4) === 72
+

@@ -1,0 +1,6 @@
+# Object Files
+*.out
+*.o
+
+# Vim Swap Files
+*.swp

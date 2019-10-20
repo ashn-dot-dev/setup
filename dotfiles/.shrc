@@ -1,0 +1,63 @@
+#!/bin/sh
+# .shrc : Common sh-compatible run commands.
+
+[ -f "$HOME/.env" ] && . "$HOME/.env"
+
+
+## ALIASES
+alias ll='ls -alF'
+alias ccc='clear;clear;clear'
+alias tree='tree -n'
+
+alias shelve='git stash'
+alias unshelve='git stash apply'
+
+alias valgrind-mc='valgrind \
+    --leak-check=yes \
+    --leak-check=full \
+    --show-leak-kinds=all \
+    --track-origins=yes'
+alias gdbt='gdb --tui'
+
+
+## CUSTOM PS1
+git_ps1()
+{
+    GIT_BRANCH=$(git branch 2> /dev/null | grep '^\* ' | sed -e 's/^\* //g')
+    if [ -z "${GIT_BRANCH}" ]; then
+        echo ''
+        return
+    fi
+
+    GIT_STATUS=$(git status 2> /dev/null | tee)
+    GIT_REN=$(echo "${GIT_STATUS}" | grep '^.*renamed:')
+    GIT_MOD=$(echo "${GIT_STATUS}" | grep '^.*modified:')
+    GIT_DEL=$(echo "${GIT_STATUS}" | grep '^.*deleted:')
+    GIT_NEW=$(echo "${GIT_STATUS}" | grep '^.*new file:')
+    GIT_UNT=$(echo "${GIT_STATUS}" | grep '^Untracked files')
+
+    GIT_STATUS_SUMMARY=''
+    if [ -n "${GIT_REN}" ]; then
+        GIT_STATUS_SUMMARY="${GIT_STATUS_SUMMARY}>"
+    fi
+    if [ -n "${GIT_MOD}" ]; then
+        GIT_STATUS_SUMMARY="${GIT_STATUS_SUMMARY}!"
+    fi
+    if [ -n "${GIT_DEL}" ]; then
+        GIT_STATUS_SUMMARY="${GIT_STATUS_SUMMARY}x"
+    fi
+    if [ -n "${GIT_NEW}" ]; then
+        GIT_STATUS_SUMMARY="${GIT_STATUS_SUMMARY}+"
+    fi
+    if [ -n "${GIT_UNT}" ]; then
+        GIT_STATUS_SUMMARY="${GIT_STATUS_SUMMARY}?"
+    fi
+
+    if [ ! -z "${GIT_STATUS_SUMMARY}" ]; then
+        echo "[${GIT_BRANCH} ${GIT_STATUS_SUMMARY}]"
+    else
+        echo "[${GIT_BRANCH}]"
+    fi
+}
+export git_ps1
+export PS1="\w\[\e[33m\]\`git_ps1\`\[\e[m\]\\$ "

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Update a WIP git branch with an amend and force push.
+set -e
+git add --all
+git commit --amend --no-edit --date="$(date -R)"
+git push --force

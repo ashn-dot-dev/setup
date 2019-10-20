@@ -1,0 +1,16 @@
+Setup
+=====
+
+Run `setup-apt-packages.sh`.
+Run `setup-bin.sh`.
+Run `setup-dotfiles.sh`.
+
+Goto Settings Panel -> Input -> Key Bindings and add the following key bindings:
+. CTRL+ALT+T ==> Command w/ action params:
+  .. `terminology --maximized --visual-bell=false --cursor-blink=false`
+. CTRL+ALT+SHIFT+Left ==> To Previous Desktop
+. CTRL+ALT+SHIFT+Right ==> To Next Desktop
+
+In `terminology` right click and edit settings by clearing the `temporary`
+check box and then editing as desired.
+Under background make sure the image is `none` and shine is at zero.

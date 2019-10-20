@@ -1,0 +1,25 @@
+#!/bin/sh
+# Rebind caps lock to escape within the linux terminal.
+# Running `showkey` and then hitting escape and then caps lock shows:
+#
+#   keycode   1 press
+#   keycode   1 release
+#   keycode  58 press
+#   keycode  58 release
+#
+# Escape is keycode 1 and caps lock is keycode 58.
+#
+# Running:
+#
+#   (dumpkeys | grep keymaps; echo "keycode 58 = Escape")
+#
+# will produce:
+#
+#   keymaps 0-127
+#   keycode 58 = Escape
+#
+# which when piped into `loadkeys` will remap the keycode 58 (i.e. caps lock) to
+# 'Escape' to get the sweet sweet vim-keyboard escape key.
+
+[ "$(id -u)" != "0" ] && echo 'MUST RUN AS ROOT' && exit 1
+(dumpkeys | grep keymaps; echo "keycode 58 = Escape") | loadkeys
