@@ -37,6 +37,7 @@ apt-get -y install valgrind
 
 # Utilities
 apt-get -y install ascii
+apt-get -y install asciidoctor
 apt-get -y install acpi # Display battery information.
 apt-get -y install bash
 apt-get -y install bash-completion
