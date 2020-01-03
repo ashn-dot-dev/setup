@@ -44,6 +44,7 @@ apt-get -y install bash-completion
 apt-get -y install cloc
 apt-get -y install curl
 apt-get -y install dash
+apt-get -y install dvtm # Tiling console.
 apt-get -y install git
 apt-get -y install htop
 apt-get -y install iputils-ping # ping
