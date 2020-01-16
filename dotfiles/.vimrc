@@ -102,6 +102,10 @@ nnoremap <S-M> <nop>
 "" It has only ever been an annoyance.
 nnoremap <S-Q> <nop>
 
+" Bash-like backspace and delete.
+inoremap <C-H> <bs>
+inoremap <C-D> <del>
+
 " More natural splits.
 set splitbelow
 set splitright
@@ -160,7 +164,9 @@ function s:SwitchColorColumn()
         set colorcolumn=81
     endif
 endfunction
+
 nnoremap <silent><F2> :call <SID>SwitchColorColumn()<Return>
+inoremap <silent><F2> :call <SID>SwitchColorColumn()<Return>
 vnoremap <silent><F2> :call <SID>SwitchColorColumn()<Return>
 
 " <F3> => Toggle between 'insert' and 'insert (paste)' modes.
