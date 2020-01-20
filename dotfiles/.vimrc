@@ -72,7 +72,8 @@ endfunction
 """ KEY BINDINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let mapleader = ";"
+" Leader
+let mapleader = " "
 
 " Arrow keys are for wusses.
 nnoremap <up>    <nop>
