@@ -1,10 +1,13 @@
 Setup
 =====
 
-Run `setup-apt-packages.sh`.
-Run `setup-bin.sh`.
-Run `setup-dotfiles.sh`.
+----
+$ sudo ./setup-apt-packages.sh
+$ ./setup-bin.sh
+$ ./setup-dotfiles.sh
+----
 
+== Bodhi Linux Setup Notes
 Goto Settings Panel -> Input -> Key Bindings and add the following key bindings:
 . CTRL+ALT+T ==> Command w/ action params:
   .. `terminology --maximized --visual-bell=false --cursor-blink=false`
@@ -14,3 +17,80 @@ Goto Settings Panel -> Input -> Key Bindings and add the following key bindings:
 In `terminology` right click and edit settings by clearing the `temporary`
 check box and then editing as desired.
 Under background make sure the image is `none` and shine is at zero.
+
+
+== Ubuntu MATE 18.04 Setup Notes
+=== Update Mouse and Trackpad Settings
+. Goto Menu -> Mouse -> Touchpad.
+  .. Uncheck 'Enable mouse clicks with touchpad'.
+  .. Set 'Two-finger click emulation:' to 'Right button'.
+  .. Check 'Enable natural scrolling'.
+
+
+=== Update Terminal Settings
+. Open mate-terminal.
+. Goto Edit -> Profile Preferences -> General.
+  .. Uncheck 'Terminal bell'.
+  .. Uncheck 'Show menubar by default in new terminals'.
+. Goto Edit -> Profile Preferences -> Scrolling.
+  .. Set 'Scrollbar is:' to 'Disabled'.
+  .. Set 'Scrollback:' to 'Unlimited' by checking the 'Unlimited' box.
+. Goto Edit -> Keyboard Shortcuts and disable everything except:
+  .. Copy = Shift+Ctrl+C
+  .. Paste = Shift+Ctrl+V
+  .. Full Screen = Shift+Ctrl+F11
+  .. Hide and Show menubar = Shift+Ctrl+F12
+  .. Zoom In = Ctrl++
+  .. Zoom Out = Ctrl+_
+
+
+=== Update Keyboard Shortcuts
+. Goto Menu -> Keyboard Shortcuts.
+. Disable pretty much everything from 'Desktop' down by clicking an item
+and then entering <backspace> when asked to rebind the shortcut.
+. Set the following predefined shorcuts:
+  .. Lock Screen = Ctrl+Alt+L
+  .. Take a screenshot = Print
+  .. Run a terminal Ctrl+Alt+T
+  .. Move between windows, using a popup window = Alt+Tab
+  .. Switch to workspace left of the current workspace = Ctrl+Alt+Left
+  .. Switch to workspace right of the current workspace = Ctrl+Alt+Right
+  .. Maximize window = Mod4+Up
+  .. Tile window to east (right) side of screen = Mod4+Right
+  .. .................... (left) side of screen = Mod4+Left
+  .. ................ (top left) side of screen = Ctrl+Mod4+Up
+  .. ............... (top right) side of screen = Alt+Mod4+Up
+  .. ............. (bottom left) side of screen = Ctrl+Mod4+Down
+  .. ............ (bottom right) side of screen = Alt+Mod4+Down
+  .. Move window one workspace to the left = Shift+Ctrl+Alt+Left
+  .. Move window one workspace to the right = Shift+Ctrl+Alt+Right
+
+
+=== Change Caps Lock to Escape (GUI)
+. Goto Menu -> Keyboard -> Layouts.
+. Select 'English (US)' and click 'Options...'.
+. From the popup menu goto 'Caps Lock Behavior' and select 'Make Caps Lock an
+additional Esc'.
+
+
+=== Change the Login Background Image
+. Goto /usr/share/backgrounds/ubuntu-mate-common and open a file explorer.
+. There should be a bunch of images, the names of which change from release
+to release.
+. Find the image corresponding to the current login screen. On Bionic Beaver
+the image corresponding to the login background was `Green-Wall-Logo.png`, which
+moving forward I will refer to as IMAGE.
+. Backup IMAGE with:
+----
+/usr/share/backgrounds$ mv IMAGE IMAGE.bak
+----
+. Copy your desired background to IMAGE with:
+----
+$ cp BACKGROUND /usr/share/backgrounds/IMAGE
+----
+
+
+=== Uninstall Default Bloat
+----
+$ apt-get -y purge plank
+----
