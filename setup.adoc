@@ -21,20 +21,21 @@ Under background make sure the image is `none` and shine is at zero.
 
 == Ubuntu MATE 18.04 Setup Notes
 === Update Mouse and Trackpad Settings
-. Goto Menu -> Mouse -> Touchpad.
-  .. Uncheck 'Enable mouse clicks with touchpad'.
-  .. Set 'Two-finger click emulation:' to 'Right button'.
-  .. Check 'Enable natural scrolling'.
+. Goto Menu -> Mouse -> Touchpad
+  .. Uncheck 'Enable mouse clicks with touchpad'
+  .. Set 'Two-finger click emulation:' to 'Right button'
+  .. Check 'Enable natural scrolling'
 
 
 === Update Terminal Settings
-. Open mate-terminal.
-. Goto Edit -> Profile Preferences -> General.
-  .. Uncheck 'Terminal bell'.
-  .. Uncheck 'Show menubar by default in new terminals'.
-. Goto Edit -> Profile Preferences -> Scrolling.
-  .. Set 'Scrollbar is:' to 'Disabled'.
-  .. Set 'Scrollback:' to 'Unlimited' by checking the 'Unlimited' box.
+. Open mate-terminal
+. Goto Edit -> Profile Preferences -> General
+  .. Uncheck 'Terminal bell'
+  .. Uncheck 'Show menubar by default in new terminals'
+  .. Set font to 'Ubuntu Mono Regular' size 16
+. Goto Edit -> Profile Preferences -> Scrolling
+  .. Set 'Scrollbar is:' to 'Disabled'
+  .. Set 'Scrollback:' to 'Unlimited' by checking the 'Unlimited' box
 . Goto Edit -> Keyboard Shortcuts and disable everything except:
   .. Copy = Shift+Ctrl+C
   .. Paste = Shift+Ctrl+V
@@ -42,6 +43,7 @@ Under background make sure the image is `none` and shine is at zero.
   .. Hide and Show menubar = Shift+Ctrl+F12
   .. Zoom In = Ctrl++
   .. Zoom Out = Ctrl+_
+
 
 
 === Update Keyboard Shortcuts
