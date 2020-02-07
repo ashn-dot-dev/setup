@@ -44,8 +44,6 @@ Under background make sure the image is `none` and shine is at zero.
   .. Zoom In = Ctrl++
   .. Zoom Out = Ctrl+_
 
-
-
 === Update Keyboard Shortcuts
 . Goto Menu -> Keyboard Shortcuts.
 . Disable pretty much everything from 'Desktop' down by clicking an item
@@ -67,13 +65,11 @@ and then entering <backspace> when asked to rebind the shortcut.
   .. Move window one workspace to the left = Shift+Ctrl+Alt+Left
   .. Move window one workspace to the right = Shift+Ctrl+Alt+Right
 
-
 === Change Caps Lock to Escape (GUI)
 . Goto Menu -> Keyboard -> Layouts.
 . Select 'English (US)' and click 'Options...'.
 . From the popup menu goto 'Caps Lock Behavior' and select 'Make Caps Lock an
 additional Esc'.
-
 
 === Change the Login Background Image
 . Goto /usr/share/backgrounds/ubuntu-mate-common and open a file explorer.
@@ -91,8 +87,18 @@ moving forward I will refer to as IMAGE.
 $ cp BACKGROUND /usr/share/backgrounds/IMAGE
 ----
 
-
 === Uninstall Default Bloat
 ----
 $ apt-get -y purge plank
+----
+
+=== MATE Terminal Config
+Save terminal config:
+----
+$ dconf dump /org/mate/terminal/ > /path/to/mate-terminal.dconf
+----
+
+Load terminal config:
+----
+$ cat /path/to/mate-terminal.dconf | dconf load /org/mate/terminal/
 ----
