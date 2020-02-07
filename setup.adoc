@@ -3,6 +3,7 @@ Setup
 
 ----
 $ sudo ./setup-apt-packages.sh
+$ sudo ./setup-luarocks.sh
 $ ./setup-bin.sh
 $ ./setup-dotfiles.sh
 ----
