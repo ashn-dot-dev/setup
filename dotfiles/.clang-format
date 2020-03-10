@@ -6,7 +6,7 @@ AlignEscapedNewlines: Right
 AlignOperands: false
 AlignTrailingComments: false
 AllowAllParametersOfDeclarationOnNextLine: true
-AllowShortBlocksOnASingleLine: true
+AllowShortBlocksOnASingleLine: false
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: false
 AllowShortIfStatementsOnASingleLine: true
@@ -17,6 +17,7 @@ AlwaysBreakTemplateDeclarations: true
 BinPackArguments: false
 BinPackParameters: false
 BreakBeforeBraces: Custom
+BreakBeforeBinaryOperators: NonAssignment
 BreakConstructorInitializers: AfterColon
 BreakStringLiterals: false
 BraceWrapping:
