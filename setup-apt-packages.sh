@@ -27,8 +27,6 @@ apt-get -y install gcc
 apt-get -y install g++
 apt-get -y install gdb
 apt-get -y install llvm
-apt-get -y install lua5.3
-apt-get -y install luajit
 apt-get -y install musl-tools # musl-gcc
 apt-get -y install python
 apt-get -y install python3
@@ -71,7 +69,6 @@ apt-get -y install xdotool # X11 CLI keyboard and mouse control.
 
 # Libs
 apt-get -y install libgmp-dev
-apt-get -y install liblua5.3-dev
 
 # GUI
 apt-get -y install pavucontrol # PulseAudio Volume Control.
