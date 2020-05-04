@@ -31,6 +31,7 @@ apt-get -y install python
 apt-get -y install python3
 apt-get -y install racket
 apt-get -y install ruby-full
+apt-get -y install shellcheck
 apt-get -y install tcc # Tiny C Compiler.
 apt-get -y install valgrind
 
