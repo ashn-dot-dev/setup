@@ -9,7 +9,6 @@ apt-get -y update
 apt-get -y upgrade
 
 apt-get -y install apt-utils
-apt-get -y install ubuntu-minimal
 apt-get -y install build-essential
 
 apt-get -y install linux-tools-common
@@ -71,6 +70,7 @@ apt-get -y install xdotool # X11 CLI keyboard and mouse control.
 apt-get -y install libgmp-dev
 
 # GUI
+apt-get -y install gnome-disk-utility # gnome-disks
 apt-get -y install pavucontrol # PulseAudio Volume Control.
 apt-get -y install transmission # BitTorrent Client.
 apt-get -y install vlc
