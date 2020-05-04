@@ -2,8 +2,8 @@
 [ "$(id -u)" != "0" ] && echo 'MUST RUN AS ROOT' && exit 1
 
 apt-get -y install lua5.3
-apt-get -y install luajit
 apt-get -y install liblua5.3-dev
+#apt-get -y install luajit
 
 LUAROCKS=luarocks-3.3.0
 
