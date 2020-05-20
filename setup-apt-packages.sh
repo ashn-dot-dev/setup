@@ -2,7 +2,7 @@
 [ "$(id -u)" != "0" ] && echo 'MUST RUN AS ROOT' && exit 1
 export DEBIAN_FRONTEND=noninteractive
 DISTRO="$(lsb_release --id --short)"
-METHOD="$1" # What kind of install is this? "" (test with -z) | "GUI"
+METHOD="$1" # What kind of install is this? "" (test with -z) | "gui"
 
 set -e
 set -x
@@ -73,7 +73,7 @@ apt-get -y install libgmp-dev
 apt-get -y install libncurses5-dev
 
 # GUI
-if [ "$METHOD" = "GUI" ]; then
+if [ "$METHOD" = "gui" ]; then
     apt-get -y install xdotool # X11 CLI keyboard and mouse control.
     apt-get -y install gnome-disk-utility # gnome-disks
     apt-get -y install pavucontrol # PulseAudio Volume Control.
