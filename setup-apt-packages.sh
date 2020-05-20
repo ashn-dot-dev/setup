@@ -1,6 +1,8 @@
 #!/bin/sh
 [ "$(id -u)" != "0" ] && echo 'MUST RUN AS ROOT' && exit 1
 export DEBIAN_FRONTEND=noninteractive
+DISTRO="$(lsb_release --id --short)"
+METHOD="$1" # What kind of install is this? "" (test with -z) | "GUI"
 
 set -e
 set -x
@@ -15,8 +17,10 @@ apt-get -y install linux-tools-common
 apt-get -y install linux-tools-generic
 apt-get -y install linux-tools-`uname -r`
 
-apt-get -y install network-manager
-apt-get -y install wireless-tools
+if [ "$DISTRO" = "Ubuntu" ]; then
+    apt-get -y install network-manager
+    apt-get -y install wireless-tools
+fi
 
 # Dev Tools
 apt-get -y install autoconf
@@ -26,6 +30,7 @@ apt-get -y install gcc
 apt-get -y install g++
 apt-get -y install gdb
 apt-get -y install llvm
+apt-get -y install mit-scheme
 apt-get -y install musl-tools # musl-gcc
 apt-get -y install python
 apt-get -y install python3
@@ -43,18 +48,15 @@ apt-get -y install bash
 apt-get -y install bash-completion
 apt-get -y install cloc
 apt-get -y install curl
-apt-get -y install dash
-apt-get -y install dvtm # Tiling console.
+apt-get -y install dash # Debian's default non-interactive shell.
 apt-get -y install git
-apt-get -y install htop
+apt-get -y install htop # Better top.
 apt-get -y install iputils-ping # ping
 apt-get -y install less
 apt-get -y install lzip
 apt-get -y install man
 apt-get -y install nano
 apt-get -y install pandoc
-apt-get -y install pass
-apt-get -y install powertop # Power consumption and management tool.
 apt-get -y install pwgen
 apt-get -y install rfkill
 apt-get -y install sl
@@ -65,13 +67,16 @@ apt-get -y install tree
 apt-get -y install vim
 apt-get -y install wget
 apt-get -y install w3m
-apt-get -y install xdotool # X11 CLI keyboard and mouse control.
 
 # Libs
 apt-get -y install libgmp-dev
+apt-get -y install libncurses5-dev
 
 # GUI
-apt-get -y install gnome-disk-utility # gnome-disks
-apt-get -y install pavucontrol # PulseAudio Volume Control.
-apt-get -y install transmission # BitTorrent Client.
-apt-get -y install vlc
+if [ "$METHOD" = "GUI" ]; then
+    apt-get -y install xdotool # X11 CLI keyboard and mouse control.
+    apt-get -y install gnome-disk-utility # gnome-disks
+    apt-get -y install pavucontrol # PulseAudio Volume Control.
+    apt-get -y install transmission # BitTorrent Client.
+    apt-get -y install vlc
+fi
