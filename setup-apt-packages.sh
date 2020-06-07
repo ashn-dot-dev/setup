@@ -77,6 +77,7 @@ if [ "$METHOD" = "gui" ]; then
     apt-get -y install xdotool # X11 CLI keyboard and mouse control.
     apt-get -y install gnome-disk-utility # gnome-disks
     apt-get -y install pavucontrol # PulseAudio Volume Control.
+    apt-get -y install pinta # Simple image editor.
     apt-get -y install transmission # BitTorrent Client.
     apt-get -y install vlc
 fi
