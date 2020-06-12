@@ -6,6 +6,7 @@
 
 ## ALIASES
 alias ll='ls -alF'
+alias l1='ls -a1'
 alias ccc='clear;clear;clear'
 alias tree='tree -n'
 alias now='echo `date +%R` "/" `date +%r`'
