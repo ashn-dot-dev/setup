@@ -89,7 +89,7 @@ vnoremap <down>  <nop>
 vnoremap <left>  <nop>
 vnoremap <right> <nop>
 
-" Remove unused misc commands that I never use.
+" Remove misc commands that I never use.
 nnoremap <F> <nop>
 nnoremap <M> <nop>
 nnoremap <S-L> <nop>
