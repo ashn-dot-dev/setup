@@ -71,6 +71,7 @@ apt-get -y install w3m
 # Libs
 apt-get -y install libgmp-dev
 apt-get -y install libncurses5-dev
+apt-get -y install libsdl2-dev
 
 # GUI
 if [ "$METHOD" = "gui" ]; then
