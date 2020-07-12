@@ -59,6 +59,7 @@ apt-get -y install nano
 apt-get -y install pandoc
 apt-get -y install pwgen
 apt-get -y install rfkill
+apt-get -y install s3cmd # Linode s3 buckets
 apt-get -y install sl
 apt-get -y install ssh
 apt-get -y install sudo
