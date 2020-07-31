@@ -26,6 +26,7 @@ fi
 apt-get -y install autoconf
 apt-get -y install clang
 apt-get -y install clang-format
+apt-get -y install cmake
 apt-get -y install gcc
 apt-get -y install g++
 apt-get -y install gdb
