@@ -83,4 +83,5 @@ if [ "$METHOD" = "gui" ]; then
     apt-get -y install pinta # Simple image editor.
     apt-get -y install transmission # BitTorrent Client.
     apt-get -y install vlc
+    apt-get -y install kazam
 fi
