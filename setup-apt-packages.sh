@@ -35,6 +35,8 @@ apt-get -y install mit-scheme
 apt-get -y install musl-tools # musl-gcc
 apt-get -y install python
 apt-get -y install python3
+apt-get -y install python3-pip
+
 apt-get -y install racket
 apt-get -y install ruby-full
 apt-get -y install shellcheck
