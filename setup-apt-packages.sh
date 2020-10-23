@@ -17,11 +17,6 @@ apt-get -y install linux-tools-common
 apt-get -y install linux-tools-generic
 apt-get -y install linux-tools-`uname -r`
 
-if [ "$DISTRO" = "Ubuntu" ]; then
-    apt-get -y install network-manager
-    apt-get -y install wireless-tools
-fi
-
 # Dev Tools
 apt-get -y install autoconf
 apt-get -y install clang
@@ -36,7 +31,6 @@ apt-get -y install musl-tools # musl-gcc
 apt-get -y install python
 apt-get -y install python3
 apt-get -y install python3-pip
-
 apt-get -y install racket
 apt-get -y install ruby-full
 apt-get -y install shellcheck
@@ -51,9 +45,7 @@ apt-get -y install bash
 apt-get -y install bash-completion
 apt-get -y install cloc
 apt-get -y install curl
-apt-get -y install dash # Debian's default non-interactive shell.
 apt-get -y install git
-apt-get -y install htop # Better top.
 apt-get -y install iputils-ping # ping
 apt-get -y install less
 apt-get -y install lzip
@@ -61,9 +53,9 @@ apt-get -y install man
 apt-get -y install nano
 apt-get -y install pandoc
 apt-get -y install pwgen
-apt-get -y install rfkill
-apt-get -y install s3cmd # Linode s3 buckets
-apt-get -y install sl
+apt-get -y install rfkill # Enable and disable wireless devices.
+apt-get -y install s3cmd # Linode s3 buckets.
+apt-get -y install sl # Steam locomotive.
 apt-get -y install ssh
 apt-get -y install sudo
 apt-get -y install tio
