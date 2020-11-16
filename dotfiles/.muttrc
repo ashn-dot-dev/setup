@@ -1,0 +1,24 @@
+set folder = imaps://imap.migadu.com/
+set imap_user=me@ashn.dev
+set imap_pass="" # Prompt for password.
+set spoolfile=+INBOX
+set imap_check_subscribed
+mailboxes = +INBOX
+
+set header_cache = ~/.cache/mutt
+set message_cachedir = "~/.cache/mutt"
+set postponed = +Drafts
+unset imap_passive
+set imap_keepalive = 300
+set mail_check = 120
+
+set record = +Sent
+
+set realname = 'ash'
+set from = me@ashn.dev
+set use_from = yes
+set smtp_pass = $imap_pass
+set smtp_url = smtps://$imap_user@smtp.migadu.com
+set ssl_force_tls = yes
+
+set editor=vim
