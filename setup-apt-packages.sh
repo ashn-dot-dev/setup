@@ -36,6 +36,7 @@ apt-get -y install ruby-full
 apt-get -y install shellcheck
 apt-get -y install tcc # Tiny C Compiler.
 apt-get -y install valgrind
+apt-get -y install qemu qemu-kvm # LATER: sudo adduser $USER kvm
 
 # Utilities
 apt-get -y install ascii
