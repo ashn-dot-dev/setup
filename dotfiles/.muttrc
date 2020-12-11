@@ -14,7 +14,7 @@ set mail_check = 120
 
 set record = +Sent
 
-set realname = 'ash'
+set realname = 'ashn'
 set from = me@ashn.dev
 set use_from = yes
 set smtp_pass = $imap_pass
