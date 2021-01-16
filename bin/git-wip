@@ -1,0 +1,5 @@
+#!/bin/sh
+# Update a WIP git branch with an amend.
+set -e
+git add --all
+git commit --amend --no-edit --date="$(date -R)"
