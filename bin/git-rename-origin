@@ -1,5 +1,4 @@
 #!/bin/sh
-
 set -e
 NEW_REMOTE="${1}"
 git remote rename origin "${NEW_REMOTE}"
