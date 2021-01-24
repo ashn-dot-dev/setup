@@ -10,5 +10,6 @@ fi
 
 REMOTES="$(git remote)"
 for remote in ${REMOTES}; do
+    echo "REMOTE: ${remote}"
     git push "${remote}" "${BRANCH}"
 done
