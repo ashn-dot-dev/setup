@@ -66,6 +66,7 @@ apt-get -y install wget
 apt-get -y install w3m
 
 # Libs
+apt-get -y install libcurl4-openssl-dev
 apt-get -y install libgmp-dev
 apt-get -y install libncurses5-dev
 apt-get -y install libsdl2-dev
