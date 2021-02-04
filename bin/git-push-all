@@ -2,14 +2,8 @@
 
 set -e
 
-BRANCH="${1}"
-if [ -z "${BRANCH}" ]; then
-    CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-    BRANCH="${CURRENT_BRANCH}"
-fi
-
 REMOTES="$(git remote)"
 for remote in ${REMOTES}; do
     echo "REMOTE: ${remote}"
-    git push "${remote}" "${BRANCH}"
+    git push "${remote}" "$@"
 done
