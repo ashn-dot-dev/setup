@@ -14,9 +14,10 @@ sudo apt-get -y upgrade
 sudo apt-get -y install apt-utils
 sudo apt-get -y install build-essential
 
-sudo apt-get -y install linux-tools-common
-sudo apt-get -y install linux-tools-generic
-sudo apt-get -y install linux-tools-`uname -r`
+# TODO: These don't work on Linux Mint DE4.
+#sudo apt-get -y install linux-tools-common
+#sudo apt-get -y install linux-tools-generic
+#sudo apt-get -y install linux-tools-`uname -r`
 
 # Dev Tools
 sudo apt-get -y install autoconf
@@ -34,7 +35,7 @@ sudo apt-get -y install racket
 sudo apt-get -y install shellcheck
 sudo apt-get -y install tcc # Tiny C Compiler.
 sudo apt-get -y install valgrind
-sudo apt-get -y install qemu qemu-kvm # LATER: sudo adduser $USER kvm
+#sudo apt-get -y install qemu qemu-kvm # LATER: sudo adduser $USER kvm
 
 # Utilities
 sudo apt-get -y install ascii
@@ -48,6 +49,7 @@ sudo apt-get -y install iputils-ping # ping
 sudo apt-get -y install less
 sudo apt-get -y install lzip
 sudo apt-get -y install man
+sudo apt-get -y install mutt
 sudo apt-get -y install nano
 sudo apt-get -y install pandoc
 sudo apt-get -y install pwgen
@@ -75,7 +77,6 @@ if [ "$METHOD" = "gui" ]; then
     sudo apt-get -y install xdotool # X11 CLI keyboard and mouse control.
     sudo apt-get -y install gnome-disk-utility # gnome-disks
     sudo apt-get -y install pavucontrol # PulseAudio Volume Control.
-    sudo apt-get -y install pinta # Simple image editor.
     sudo apt-get -y install transmission # BitTorrent Client.
     sudo apt-get -y install vlc
     sudo apt-get -y install kazam
