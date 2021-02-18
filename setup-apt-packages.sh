@@ -29,7 +29,6 @@ sudo apt-get -y install g++
 sudo apt-get -y install gdb
 sudo apt-get -y install llvm
 sudo apt-get -y install musl-tools # musl-gcc
-sudo apt-get -y install mypy
 sudo apt-get -y install python3
 sudo apt-get -y install python3-pip
 sudo apt-get -y install racket
@@ -37,6 +36,8 @@ sudo apt-get -y install shellcheck
 sudo apt-get -y install tcc # Tiny C Compiler.
 sudo apt-get -y install valgrind
 #sudo apt-get -y install qemu qemu-kvm # LATER: sudo adduser $USER kvm
+sudo apt-get -y install black # Python3 code formatting
+sudo apt-get -y install mypy  # Python3 type checking
 
 # Utilities
 sudo apt-get -y install ascii
