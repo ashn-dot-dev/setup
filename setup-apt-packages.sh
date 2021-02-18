@@ -29,6 +29,7 @@ sudo apt-get -y install g++
 sudo apt-get -y install gdb
 sudo apt-get -y install llvm
 sudo apt-get -y install musl-tools # musl-gcc
+sudo apt-get -y install mypy
 sudo apt-get -y install python3
 sudo apt-get -y install python3-pip
 sudo apt-get -y install racket
