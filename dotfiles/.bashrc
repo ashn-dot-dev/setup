@@ -3,6 +3,7 @@
 
 # Make Bash conform more closely to the POSIX standard.
 set -o posix
+export PATH="$PATH:$HOME/bin"
 
 HISTCONTROL=ignorespace
 HISTSIZE=4096
