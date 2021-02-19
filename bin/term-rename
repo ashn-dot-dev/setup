@@ -1,0 +1,2 @@
+#!/bin/sh
+printf "\e]0;${1}\a"
