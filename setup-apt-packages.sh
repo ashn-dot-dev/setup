@@ -36,8 +36,9 @@ sudo apt-get -y install shellcheck
 sudo apt-get -y install tcc # Tiny C Compiler.
 sudo apt-get -y install valgrind
 #sudo apt-get -y install qemu qemu-kvm # LATER: sudo adduser $USER kvm
-sudo apt-get -y install black # Python3 code formatting
-sudo apt-get -y install mypy  # Python3 type checking
+sudo apt-get -y install black   # Python3 code formatting
+sudo apt-get -y install mypy    # Python3 type checking
+sudo apt-get -y install pylint3 # Python3 linter
 
 # Utilities
 sudo apt-get -y install ascii
