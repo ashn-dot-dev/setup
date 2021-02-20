@@ -23,6 +23,7 @@ sudo apt-get -y install build-essential
 sudo apt-get -y install autoconf
 sudo apt-get -y install clang
 sudo apt-get -y install clang-format
+sudo apt-get -y install bmake # NetBSD make
 sudo apt-get -y install cmake
 sudo apt-get -y install gcc
 sudo apt-get -y install g++
