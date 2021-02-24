@@ -18,6 +18,8 @@ set number
 set nowrap
 " Turn off spellchecking by default.
 set nospell
+" Do not insert two spaces after a period when joining separate lines with gq.
+set nojoinspaces
 " Highlight matching parentheses, braces, and brackets by default.
 set showmatch
 " Show an 81 column magenta colorcolumn by default.
