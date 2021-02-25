@@ -62,6 +62,8 @@ autocmd FileType lisp,scheme setlocal tabstop=2 shiftwidth=2 expandtab
 " HTML/JavaScript/CSS style preferences.
 autocmd FileType html,javascript,json,css setlocal ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.ts set syntax=javascript ts=2 sw=2 expandtab
+" Markdown style preferences.
+autocmd BufNewFile,BufRead *.md set ts=2 sw=2 expandtab
 
 " Linux Kernel style preferences.
 function s:SetLinuxKernelStyleConfig()
