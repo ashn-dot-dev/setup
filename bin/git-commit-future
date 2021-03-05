@@ -1,0 +1,6 @@
+#!/bin/sh
+# Git comit +N hours in the future.
+set -e
+NHRS="${1}"
+ARGS="${2}"
+git commit --date "$(date -d +${NHRS}hours)" ${ARGS}
