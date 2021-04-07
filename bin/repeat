@@ -1,0 +1,37 @@
+#!/bin/sh
+
+usage() {
+cat <<EOF
+Usage: $(basename $0) [OPTION]... TASK
+Run a task repeatedly - similar to the Linux procps watch program.
+Examples:
+  $(basename $0) date                  # Get current datetime
+  $(basename $0) -n 1 "clear && date"  # Wall clock
+Options:
+  -h, --help    Print this help message and exit.
+  -n NUMBER     Run TASK every NUMBER seconds (default 2).
+EOF
+}
+
+NUMBER=2
+while test $# -gt 0; do
+case "$1" in
+    -h|--help)
+        usage
+        exit 0
+        ;;
+    -n)
+        NUMBER="$2"
+        shift
+        shift
+        ;;
+    *)
+        break
+        ;;
+esac
+done
+
+while true; do
+    eval "$@"
+    sleep "${NUMBER}"
+done
