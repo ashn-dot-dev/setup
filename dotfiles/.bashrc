@@ -17,7 +17,6 @@ source /etc/bash_completion 2> /dev/null
 ## ALIASES
 alias ll='ls -alF'
 alias l1='ls -a1'
-alias ccc='clear;clear;clear'
 alias tree='tree -n' # The -n flag always disables color.
 
 alias now='echo `date +%R` "/" `date +%r`'
