@@ -32,6 +32,11 @@ alias valgrind-mc='valgrind \
     --track-origins=yes'
 alias gdbt='gdb --tui'
 
+## THIRD PARTY
+if [ -e "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
+
 ## CUSTOM PS1
 git_ps1() {
     GIT_BRANCH=$(git branch 2> /dev/null | grep '^\* ' | sed -e 's/^\* //g')
