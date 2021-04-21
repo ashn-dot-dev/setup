@@ -1,0 +1,4 @@
+#!/bin/sh
+# Echo the current time in "24hr / 12hr" format.
+set -e
+echo $(date +%R) "/" $(date +%r)

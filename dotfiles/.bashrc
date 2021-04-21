@@ -19,9 +19,6 @@ alias ll='ls -alF'
 alias l1='ls -a1'
 alias tree='tree -n' # The -n flag always disables color.
 
-alias now='echo `date +%R` "/" `date +%r`'
-alias clock='while true; do clear; now; sleep 1; done'
-
 alias shelve='git stash'
 alias unshelve='git stash apply'
 

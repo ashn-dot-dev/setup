@@ -1,0 +1,8 @@
+#!/bin/sh
+# Ticking terminal clock.
+set -e
+while true; do
+    clear
+    now
+    sleep 1
+done
