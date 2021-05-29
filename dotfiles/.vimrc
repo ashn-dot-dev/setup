@@ -20,6 +20,10 @@ set nowrap
 set nospell
 " Do not insert two spaces after a period when joining separate lines with gq.
 set nojoinspaces
+" Use a 80 columns when formatting text with gq.
+" Execute `set tw=72` when composing an email.
+" Execute `set tw=79` when working with Python code.
+set textwidth=80
 " Highlight matching parentheses, braces, and brackets by default.
 set showmatch
 " Show an 81 column magenta colorcolumn by default.
@@ -64,6 +68,11 @@ autocmd FileType html,javascript,json,css setlocal ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.ts setlocal syntax=javascript ts=2 sw=2 expandtab
 " Markdown style preferences.
 autocmd BufNewFile,BufRead *.md setlocal ts=2 sw=2 expandtab
+
+" C indent options.
+" l1 => Aligns the closing brace of a `case VALUE: {` block with the case
+"       label instead of the opening `{`.
+set cinoptions=l1
 
 " Linux Kernel style preferences.
 function s:SetLinuxKernelStyleConfig()
