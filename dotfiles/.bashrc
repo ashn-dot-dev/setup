@@ -27,7 +27,7 @@ alias valgrind-mc='valgrind \
     --leak-check=full \
     --show-leak-kinds=all \
     --track-origins=yes'
-alias gdbt='gdb --tui'
+alias gdbt='gdb -q --tui'
 
 ## THIRD PARTY
 if [ -e "$HOME/.cargo/env" ]; then
