@@ -33,6 +33,10 @@ alias gdbt='gdb -q --tui'
 if [ -e "$HOME/.cargo/env" ]; then
     source "$HOME/.cargo/env"
 fi
+if [ -d "$HOME/.nova" ]; then
+    NOVA_HOME="$HOME/.nova"
+    PATH="$NOVA_HOME/bin:$PATH"
+fi
 
 ## CUSTOM PS1
 git_ps1() {
