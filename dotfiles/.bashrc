@@ -3,13 +3,11 @@
 
 # Make Bash conform more closely to the POSIX standard.
 set -o posix
-export PATH="$PATH:$HOME/bin"
 
 HISTCONTROL=ignorespace
 HISTSIZE=4096
 HISTFILESIZE=4096
 shopt -s histappend
-
 shopt -s checkwinsize
 
 source /etc/bash_completion 2> /dev/null
@@ -28,6 +26,19 @@ alias valgrind-mc='valgrind \
     --show-leak-kinds=all \
     --track-origins=yes'
 alias gdbt='gdb -q --tui'
+
+## CUSTOM ~/bin SCRIPTS
+export PATH="$PATH:$HOME/bin"
+## RUST
+if [ -e "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
+## SUNDER
+if [ -d "$HOME/.sunder" ]; then
+    export SUNDER_HOME="$HOME/.sunder"
+    export SUNDER_IMPORT_PATH="${SUNDER_HOME}/lib"
+    PATH="${SUNDER_HOME}/bin:$PATH"
+fi
 
 ## CUSTOM PS1
 git_ps1() {
