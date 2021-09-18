@@ -29,16 +29,6 @@ alias valgrind-mc='valgrind \
     --track-origins=yes'
 alias gdbt='gdb -q --tui'
 
-## THIRD PARTY
-if [ -e "$HOME/.cargo/env" ]; then
-    source "$HOME/.cargo/env"
-fi
-if [ -d "$HOME/.sunder" ]; then
-    export SUNDER_HOME="$HOME/.sunder"
-    export SUNDER_IMPORT_PATH="${SUNDER_HOME}/lib"
-    PATH="${SUNDER_HOME}/bin:$PATH"
-fi
-
 ## CUSTOM PS1
 git_ps1() {
     GIT_BRANCH=$(git branch 2> /dev/null | grep '^\* ' | sed -e 's/^\* //g')
