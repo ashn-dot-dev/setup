@@ -33,9 +33,10 @@ alias gdbt='gdb -q --tui'
 if [ -e "$HOME/.cargo/env" ]; then
     source "$HOME/.cargo/env"
 fi
-if [ -d "$HOME/.nova" ]; then
-    NOVA_HOME="$HOME/.nova"
-    PATH="$NOVA_HOME/bin:$PATH"
+if [ -d "$HOME/.sunder" ]; then
+    export SUNDER_HOME="$HOME/.sunder"
+    export SUNDER_IMPORT_PATH="${SUNDER_HOME}/lib"
+    PATH="${SUNDER_HOME}/bin:$PATH"
 fi
 
 ## CUSTOM PS1
