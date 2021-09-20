@@ -118,6 +118,10 @@ nnoremap <S-M> <nop>
 "" <S-Q> is bound to ex mode for historical compatibility.
 "" It has only ever been an annoyance.
 nnoremap <S-Q> <nop>
+"" K attempts to look up the keyword (normal) or selected text (visual) using
+"" whatever the current keywordprg is.
+nnoremap <S-K> <nop>
+vnoremap <S-K> <nop>
 
 " Bash-like backspace and delete.
 inoremap <C-H> <bs>
