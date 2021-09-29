@@ -54,6 +54,7 @@ sudo apt-get -y install iputils-ping # ping
 sudo apt-get -y install less
 sudo apt-get -y install lzip
 sudo apt-get -y install man
+sudo apt-get -y install moreutils # https://joeyh.name/code/moreutils/ (errno)
 sudo apt-get -y install mutt
 sudo apt-get -y install nano
 sudo apt-get -y install pandoc
