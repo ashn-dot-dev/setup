@@ -33,6 +33,7 @@ sudo apt-get -y install musl-tools # musl-gcc
 sudo apt-get -y install nasm
 sudo apt-get -y install python3
 sudo apt-get -y install python3-pip
+sudo apt-get -y install python3-venv
 sudo apt-get -y install racket
 sudo apt-get -y install shellcheck
 sudo apt-get -y install tcc # Tiny C Compiler.
