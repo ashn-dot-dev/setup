@@ -67,7 +67,7 @@ autocmd FileType lisp,scheme setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType html,javascript,json,css setlocal ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.ts setlocal syntax=javascript ts=2 sw=2 expandtab
 " Markdown style preferences.
-autocmd BufNewFile,BufRead *.md setlocal ts=2 sw=2 expandtab
+autocmd BufNewFile,BufRead *.md setlocal ts=4 sw=4 expandtab
 
 " C indent options.
 " l1 => Aligns the closing brace of a `case VALUE: {` block with the case
