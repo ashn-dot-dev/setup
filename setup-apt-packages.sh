@@ -42,6 +42,7 @@ sudo apt-get -y install valgrind
 sudo apt-get -y install black  # Python3 code formatting
 sudo apt-get -y install mypy   # Python3 type checking
 sudo apt-get -y install flake8 # Python3 linter
+sudo apt-get -y install twine  # Python3 package uploading to PyPI
 
 # Utilities
 sudo apt-get -y install ascii
