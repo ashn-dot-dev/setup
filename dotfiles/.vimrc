@@ -20,10 +20,12 @@ set nowrap
 set nospell
 " Do not insert two spaces after a period when joining separate lines with gq.
 set nojoinspaces
-" Use a 80 columns when formatting text with gq.
+" Disable textwidth line breaks by default.
+" Set to a non-zero value when formatting text with gq.
 " Execute `set tw=72` when composing an email.
 " Execute `set tw=79` when working with Python code.
-set textwidth=80
+" Execute `set tw=80` when working with C code.
+set textwidth=0
 " Highlight matching parentheses, braces, and brackets by default.
 set showmatch
 " Show an 81 column magenta colorcolumn by default.
