@@ -5,6 +5,7 @@ set nocompatible
 
 color desert
 syntax enable
+syntax off
 
 filetype plugin on
 filetype indent on
