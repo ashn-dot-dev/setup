@@ -1,0 +1,40 @@
+#!/bin/sh
+set -u
+
+PROGNAME=$(basename "$0")
+usage() {
+    cat <<EOF
+Usage: ${PROGNAME} FILE [ARGS...]
+
+Options:
+  -h, --help    Display usage information and exit.
+EOF
+}
+
+if [ "$#" -eq 0 ]; then
+    usage
+    exit 0
+fi
+
+for _ in "$@"; do
+case "$1" in
+    -h|--help)
+        usage
+        exit 0
+        ;;
+    *)
+        ;;
+esac
+done
+
+FILE="${1}"
+
+if ! rustc "${FILE}"; then
+    exit 1
+fi
+
+shift
+"./$(basename "${FILE}" .rs)" "$@"
+STATUS=$?
+rm $(basename "${FILE}" .rs)
+exit $STATUS
