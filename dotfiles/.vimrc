@@ -3,8 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
-color desert
-syntax enable
+color default
 syntax off
 
 filetype plugin on
@@ -180,6 +179,7 @@ nnoremap <silent><F1> :set number!<Return>
 
 " <F2> => Switch color column between 80 columns, 72 columns, and off.
 function s:SwitchColorColumn()
+    highlight ColorColumn ctermbg=DarkMagenta guibg=DarkMagenta
     if &colorcolumn == 81
         set colorcolumn=73
     elseif &colorcolumn == 73

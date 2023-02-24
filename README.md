@@ -66,3 +66,40 @@ $ ./setup-dotfiles.sh
 ```sh
 $ apt-get -y purge plank
 ```
+
+## Manjaro MATE
++ System->Preferences->Hardware->Keyboard Shortcuts->Run a terminal->Ctrl+Alt+T
++ System->Preferences->Hardware->Keyboard Shortcuts->Tile window to east (right) side of screen->Shift+Alt+Right # Mod4+Key does not seem to be supported?
++ System->Preferences->Hardware->Keyboard Shortcuts->Tile window to west (left) side of screen->Shift+Alt+Left   # Mod4+Key does not seem to be supported?
++ System->Preferences->Hardware->Keyboard Shortcuts->Maximize Window->Alt+Up
++ System->Preferences->Hardware->Keyboard Shortcuts->Minimize Window->Alt+Down
++ System->Preferences->Hardware->Mouse Preferences->Mouse->General->Uncheck Enable middlemouse paste
++ System->Preferences->Hardware->Mouse Preferences->Mouse->Pointer Speed->Acceleration->Slowest
++ System->Preferences->Hardware->Mouse Preferences->Mouse->Pointer Speed->Sensitivity->Slowest
++ System->Preferences->Hardware->Mouse Preferences->Mouse->Pointer Speed->Acceleration Profile->Flat
++ System->Preferences->Hardware->Mouse Preferences->Touchpad->Pointer Speed->Acceleration->Slowest
++ System->Preferences->Hardware->Mouse Preferences->Touchpad->Pointer Speed->Sensitivity->Slowest
++ System->Preferences->Hardware->Mouse Preferences->Touchpad->Two Finger Click Emulation->Right button
++ System->Preferences->Hardware->Power Management->On AC Power->Display->Put display to sleep when inactive for->Never
++ System->Preferences->Hardware->Power Management->On Battery Power->Display->Put display to sleep when inactive for->Never
++ System->Preferences->Hardware->Power Management->On Battery Power->Display->Uncheck Reduce backlight brightness
++ System->Preferences->Hardware->Power Management->On Battery Power->Display->Uncheck Dim display when idle
++ System->Preferences->Hardware->Power Management->General->Notification Area->Always display an icon
++ System->Preferences->Look and Feel->Appearance->Interface->File Chooser->Show hidden items # Not sure if this one actually changes anything.
++ System->Preferences->Look and Feel->Appearance->Screensaver->Uncheck Activate screensaver when computer is idle
+
++ Terminal->Edit->Keyboard Shortcuts->Terminal->Set Title->Shift+Ctrl+Alt+T
++ Terminal->Edit->Keyboard Shortcuts->View->Hide and Show menubar->Shift+Ctrl+F12
++ Terminal->Edit->Keyboard Shortcuts->View->Zoom In->Ctrl++
++ Terminal->Edit->Keyboard Shortcuts->View->Zoom Out->Ctrl+_
++ Terminal->Edit->Profile Preferences->General->Font->Monospace Regular (size 14)
++ Terminal->Edit->Profile Preferences->General->Uncheck Show menubar by default in new terminals
++ Terminal->Edit->Profile Preferences->General->Uncheck terminal bell
++ Terminal->Edit->Profile Preferences->Colors->Foreground, Background, Bold, and Underline->Uncheck Use colors from system theme
++ Terminal->Edit->Profile Preferences->Colors->Foreground, Background, Bold, and Underline->Built-in schemes->Solarized dark
++ Terminal->Edit->Profile Preferences->Scrolling->Scrollbar is->Disabled
++ Terminal->Edit->Profile Preferences->Scrolling->Scrollback->Unlimited
+
+It doesn't apear as if the "Caps Lock Behavior" setting is present, so you will
+have to run ~/bin/init-xmodmap at startup.
+
