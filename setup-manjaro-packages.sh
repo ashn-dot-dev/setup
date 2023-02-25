@@ -24,6 +24,7 @@ sudo pacman --noconfirm -Syu \
     sdl2 \
     sdl2_image \
     sdl2_mixer \
+    slock \
     tcc \
     tree \
     valgrind \
