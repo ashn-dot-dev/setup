@@ -100,6 +100,23 @@ $ apt-get -y purge plank
 + Terminal->Edit->Profile Preferences->Scrolling->Scrollbar is->Disabled
 + Terminal->Edit->Profile Preferences->Scrolling->Scrollback->Unlimited
 
+For some reason, lightdm does not want to log into the MATE session after boot.
+You will have to manually start your MATE session.
+```
+# During Setup
+$ cp .xinitrc-mate ~/.xinitrc
+
+# On login
+$ startx
+```
+
+Before I got into my MATE session I ran:
+```
+$ sudo pacman -Syu mate mate-extra
+```
+but I don't know if that was necessary or not.
+There is [wiki section](https://wiki.archlinux.org/title/LightDM#Infinite_login_loop)
+that I thought would help, but it did not seem to be of much use.
+
 It doesn't apear as if the "Caps Lock Behavior" setting is present, so you will
 have to run ~/bin/init-xmodmap at startup.
-
