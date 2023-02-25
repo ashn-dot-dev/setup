@@ -10,6 +10,7 @@ sudo pacman --noconfirm -Syu \
     chromium \
     clang \
     cloc \
+    cmark \
     curl \
     gcc \
     gdb \

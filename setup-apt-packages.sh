@@ -51,6 +51,7 @@ sudo apt-get -y install acpi # Display battery information.
 sudo apt-get -y install bash
 sudo apt-get -y install bash-completion
 sudo apt-get -y install cloc
+sudo apt-get -y install cmark
 sudo apt-get -y install curl
 sudo apt-get -y install git
 sudo apt-get -y install iputils-ping # ping
