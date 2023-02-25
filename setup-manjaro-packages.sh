@@ -29,4 +29,5 @@ sudo pacman --noconfirm -Syu \
     valgrind \
     vim \
     which \
-    yasm
+    yasm \
+    yay

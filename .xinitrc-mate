@@ -6,4 +6,8 @@ if [ -d /etc/X11/xini/xinitrc.d ]; then
     unset f
 fi
 
+if [ -e ~/bin/init-xmodmap ]; then
+    sh ~/bin/init-xmodmap
+fi
+
 exec mate-session
