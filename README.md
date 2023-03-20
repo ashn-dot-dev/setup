@@ -88,6 +88,7 @@ $ apt-get -y purge plank
 + System->Preferences->Look and Feel->Appearance->Interface->File Chooser->Show hidden items # Not sure if this one actually changes anything.
 + System->Preferences->Look and Feel->Appearance->Screensaver->Uncheck Activate screensaver when computer is idle
 + System->Preferences->Look and Feel->Popup Notifications->Theme->Standard Theme
++ System->Preferences->Look and Feel->Screensaver->Background picture for lock screen->/usr/share/wallpapers/manjaro-arm/generic/manjaro-bamboo-at-night.png
 
 + Terminal->Edit->Keyboard Shortcuts->Terminal->Set Title->Shift+Ctrl+Alt+T
 + Terminal->Edit->Keyboard Shortcuts->View->Hide and Show menubar->Shift+Ctrl+F12
