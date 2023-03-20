@@ -18,6 +18,7 @@ sudo pacman --noconfirm -Syu \
     moreutils \
     mypy \
     nasm \
+    perf \
     python \
     python-black \
     python-pip \
