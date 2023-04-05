@@ -25,14 +25,22 @@ alias valgrind-mc='valgrind \
     --leak-check=full \
     --show-leak-kinds=all \
     --track-origins=yes'
-alias gdbt='gdb -q --tui'
+alias gdbt='gdb -q --tui --args'
 
 ## CUSTOM ~/bin SCRIPTS
 export PATH="$HOME/bin:$PATH"
+
+## EMSCRIPTEN
+if [ -e "$HOME/.emsdk/emsdk_env.sh" ]; then
+    export EMSDK_QUIET=1
+    . "$HOME/.emsdk/emsdk_env.sh"
+fi
+
 ## RUST
 if [ -e "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
+
 ## SUNDER
 export SUNDER_HOME="$HOME/.sunder"
 if [ -e "$SUNDER_HOME/env" ]; then
