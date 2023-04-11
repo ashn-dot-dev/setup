@@ -81,6 +81,7 @@ sudo apt-get -y install libgmp-dev
 sudo apt-get -y install libncurses5-dev
 sudo apt-get -y install libsdl2-dev
 sudo apt-get -y install libsdl2-image-dev
+sudo apt-get -y install libsdl2-ttf-dev
 sudo apt-get -y install libsdl2-mixer-dev
 
 # GUI
