@@ -1,7 +1,7 @@
 System Setup and Configuration
 ==============================
 
-## Ubuntu MATE 18.04 / Linux Mint DE4(ish)
+## Ubuntu MATE 22.04 / Linux Mint DE4(ish)
 This is the process for Ubuntu MATE, but the Cinnamon desktop is close enough
 to MATE that the process for LMDE4 is almost the same.
 
@@ -61,6 +61,11 @@ $ ./setup-dotfiles.sh
 + Select 'English (US)' and click 'Options...'.
 + From the popup menu goto 'Caps Lock Behavior' and select 'Make Caps Lock an
   additional Esc'.
+
+### Fix Chrome Using Dark Mode Setting Pulled from Desktop Appearence
+```sh
+gsettings set org.gnome.desktop.interface color-scheme prefer-light
+```
 
 ### Uninstall Default Bloat
 ```sh
