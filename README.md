@@ -39,7 +39,7 @@ $ ./setup-dotfiles.sh
 + Goto Menu -> Keyboard Shortcuts.
 + Disable pretty much everything from 'Desktop' down by clicking an item
   and then entering <backspace> when asked to rebind the shortcut.
-+ Set the following predefined shorcuts:
++ Set the following predefined shortcuts:
   + Lock Screen = Ctrl+Alt+L
   + Take a screenshot = Print
   + Run a terminal Ctrl+Alt+T
@@ -62,7 +62,7 @@ $ ./setup-dotfiles.sh
 + From the popup menu goto 'Caps Lock Behavior' and select 'Make Caps Lock an
   additional Esc'.
 
-### Fix Chrome Using Dark Mode Setting Pulled from Desktop Appearence
+### Fix Chrome Using Dark Mode Setting Pulled from Desktop Appearance
 ```sh
 gsettings set org.gnome.desktop.interface color-scheme prefer-light
 ```
@@ -126,5 +126,5 @@ but I don't know if that was necessary or not.
 There is [wiki section](https://wiki.archlinux.org/title/LightDM#Infinite_login_loop)
 that I thought would help, but it did not seem to be of much use.
 
-It doesn't apear as if the "Caps Lock Behavior" setting is present, so I had to
-add ~/bin/init-xmodmap as a startup program in my .xinitrc.
+It doesn't appear as if the "Caps Lock Behavior" setting is present, so I had
+to add ~/bin/init-xmodmap as a startup program in my .xinitrc.
