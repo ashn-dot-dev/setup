@@ -107,8 +107,8 @@ $ apt-get -y purge plank
 + Terminal->Edit->Profile Preferences->Scrolling->Scrollbar is->Disabled
 + Terminal->Edit->Profile Preferences->Scrolling->Scrollback->Unlimited
 
-For some reason, lightdm does not want to log into the MATE session after boot.
-Apparently it might be a bug between lightdm and recent versions of X?
+For some reason, `lightdm` does not want to log into the MATE session after
+boot. Apparently it might be a bug between `lightdm` and recent versions of X?
 You will have to manually start your MATE session.
 ```
 # During Setup
