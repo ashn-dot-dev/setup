@@ -201,3 +201,6 @@ nnoremap <silent><F4> :set wrap!<Return>
 
 " <F5> => Switch to Linux Kernel Editing
 nnoremap <silent><F5> :call <SID>SetLinuxKernelStyleConfig()<Return>
+
+" <F6> => Disable auto indenting.
+nnoremap <silent><F6> :setlocal noautoindent nocindent nosmartindent indentexpr=<Return>
