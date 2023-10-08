@@ -27,6 +27,11 @@ alias valgrind-mc='valgrind \
     --track-origins=yes'
 alias gdbt='gdb -q --tui --args'
 
+# BREW
+if [ $(uname -s) = "Darwin" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 ## CUSTOM ~/bin SCRIPTS
 export PATH="$HOME/bin:$PATH"
 

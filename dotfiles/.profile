@@ -4,11 +4,6 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# Brew
-if [ $(uname -s) = "Darwin" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 ## CUSTOM ~/bin SCRIPTS
 export PATH="$HOME/bin:$PATH"
 ## RUST

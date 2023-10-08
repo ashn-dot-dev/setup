@@ -44,6 +44,9 @@ set so=6
 " Copy indent from the current line when starting a new line.
 set autoindent
 
+" Fix delete character not performing backspace on MacOS.
+set backspace=indent,eol,start
+
 " Render tabs with 4 space width.
 set tabstop=4
 " <Tab>, '<', '>', and autoindent use spaces.

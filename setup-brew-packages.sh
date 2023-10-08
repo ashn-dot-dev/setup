@@ -18,6 +18,7 @@ brew install cmark
 brew install discord
 brew install firefox
 brew install google-chrome
+brew install moreutils
 brew install python3
 brew install steam
 brew install vim
