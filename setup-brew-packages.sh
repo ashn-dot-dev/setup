@@ -6,6 +6,7 @@ brew -v
 
 # Dev Tools
 brew install clang-format
+brew install cmake
 #brew install gdb # XXX: Requires x86_64 architecture
 brew install gcc # gcc and g++-{version}
 brew install kitty # After set font to 14.0 and then `kitten theme` to Solarized Dark
@@ -21,6 +22,7 @@ brew install firefox
 brew install google-chrome
 brew install moreutils
 brew install python3
+brew install runelite
 brew install steam
 brew install vim
 brew install tree
