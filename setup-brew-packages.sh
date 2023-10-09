@@ -10,6 +10,7 @@ brew install cmake
 #brew install gdb # XXX: Requires x86_64 architecture
 brew install gcc # gcc and g++-{version}
 brew install kitty # After set font to 14.0 and then `kitten theme` to Solarized Dark
+brew install node # After run `npm install -g browserify` for Browserify
 
 # Utilities
 brew install ascii
