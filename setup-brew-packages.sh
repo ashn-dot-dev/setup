@@ -13,6 +13,7 @@ brew install kitty # After set font to 14.0 and then `kitten theme` to Solarized
 # Utilities
 brew install ascii
 brew install bash
+brew install bash-completion
 brew install cloc
 brew install cmark
 brew install discord
