@@ -25,6 +25,6 @@ brew install moreutils
 brew install python3
 brew install runelite
 brew install steam
-brew install vim
 brew install tree
+brew install vim
 brew install wget
