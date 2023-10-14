@@ -24,6 +24,7 @@ brew install google-chrome
 brew install moreutils
 brew install python3
 brew install runelite
+brew install spotify
 brew install steam
 brew install tree
 brew install vim
