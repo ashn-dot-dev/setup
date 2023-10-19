@@ -22,6 +22,7 @@ brew install discord
 brew install firefox
 brew install google-chrome
 brew install moreutils
+brew install obs
 brew install python3
 brew install runelite
 brew install spotify
