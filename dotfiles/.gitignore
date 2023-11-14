@@ -7,3 +7,4 @@
 
 # MacOS Files
 .DS_Store
+*.dSYM/
