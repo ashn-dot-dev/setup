@@ -18,6 +18,7 @@ brew install bash
 brew install bash-completion
 brew install cloc
 brew install cmark
+brew install coreutils
 brew install discord
 brew install firefox
 brew install google-chrome
