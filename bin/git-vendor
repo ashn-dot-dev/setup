@@ -1,0 +1,40 @@
+#!/bin/sh
+set -eu
+
+PROGNAME=$(basename "$0")
+usage() {
+    cat <<EOF
+Usage:
+    ${PROGNAME} add    DIR URL REF
+    ${PROGNAME} update DIR URL REF
+EOF
+}
+
+if [ "$#" -ne 4 ]; then
+    usage
+    exit 0
+fi
+
+CMD="$1"
+DIR="$2"
+URL="$3"
+REF="$4"
+
+if [ "${CMD}" = add ]; then
+    git subtree add --prefix="${DIR}" "${URL}" "${REF}" --squash --message \
+    "Add vendored sources: ${DIR}
+URL: ${URL}
+REF: ${REF}"
+    exit 0
+fi
+
+if [ "${CMD}" = update ]; then
+    git subtree pull --prefix="${DIR}" "${URL}" "${REF}" --squash --message \
+    "Update vendored sources: ${DIR}
+URL: ${URL}
+REF: ${REF}"
+    exit 0
+fi
+
+>&2 echo "error: unknown command `${CMD}`"
+exit 1
