@@ -31,3 +31,7 @@ brew install steam
 brew install tree
 brew install vim
 brew install wget
+
+# Extra
+# Adobe Acrobat - required to read uni transcripts
+#brew install --cask adobe-acrobat-reader
