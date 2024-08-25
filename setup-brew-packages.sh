@@ -35,3 +35,4 @@ brew install wget
 # Extra
 # Adobe Acrobat - required to read uni transcripts
 #brew install --cask adobe-acrobat-reader
+brew install --cask audacity
