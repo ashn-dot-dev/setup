@@ -16,6 +16,7 @@ source /etc/bash_completion 2> /dev/null
 alias ll='ls -alF'
 alias l1='ls -a1'
 alias tree='tree -n' # The -n flag always disables color.
+alias igrep='grep -Iir --'
 
 alias shelve='git stash'
 alias unshelve='git stash apply'
