@@ -52,6 +52,12 @@ if [ -e "$SUNDER_HOME/env" ]; then
     . "$SUNDER_HOME/env"
 fi
 
+## LUMPY
+export LUMPY_HOME="$HOME/.lumpy"
+if [ -e "$LUMPY_HOME/env" ]; then
+    . "$LUMPY_HOME/env"
+fi
+
 ## CUSTOM PS1
 git_ps1() {
     GIT_BRANCH=$(git branch 2> /dev/null | grep '^\* ' | sed -e 's/^\* //g')
