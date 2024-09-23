@@ -73,7 +73,6 @@ sudo apt-get -y install tree
 sudo apt-get -y install vim
 sudo apt-get -y install wget
 sudo apt-get -y install w3m
-sudo apt-get -y install youtube-dl
 
 # Libs
 sudo apt-get -y install libcurl4-openssl-dev
