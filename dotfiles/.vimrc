@@ -173,7 +173,7 @@ nnoremap <leader>O O<Esc>^d$
 let g:netrw_liststyle=0
 nnoremap <leader>ex  :Explore<Return>
 nnoremap <leader>tex :Texplore<Return>
-nnoremap <leader>vex :Vexplore!<Return>
+nnoremap <leader>vex :Vexplore<Return>
 nnoremap <leader>sex :Sexplore<Return>
 
 " <F1> => Toggle number.
