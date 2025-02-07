@@ -20,6 +20,8 @@ set nowrap
 set nospell
 " Do not insert two spaces after a period when joining separate lines with gq.
 set nojoinspaces
+" Disable vim automatic visual mode on mouse select.
+set mouse-=a
 " Disable textwidth line breaks by default.
 " Set to a non-zero value when formatting text with gq.
 " Execute `set tw=72` when composing an email.
