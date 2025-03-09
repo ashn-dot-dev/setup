@@ -36,6 +36,9 @@ fi
 ## CUSTOM ~/bin SCRIPTS
 export PATH="$HOME/bin:$PATH"
 
+## NPM Binaries
+export PATH="$HOME/.npm/bin:$PATH"
+
 ## EMSCRIPTEN
 if [ -e "$HOME/.emsdk/emsdk_env.sh" ]; then
     export EMSDK_QUIET=1
