@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# usage: base64-png-data-url FILE...
+#
+# Convert each file (provided as an argument) to a base64-encoded image
+# suitable for use as a DATA URL scheme compliant with RFC 2397[1].
+#
+# [1]: https://www.rfc-editor.org/rfc/rfc2397
+#
+# Insert into an HTML document as:
+# <img src="$(base-64-png-data-url some.png)"/>
+
+for png in "$@"; do
+    echo "data:image/png;base64,$(base64 --wrap=0 "$png")"
+done
