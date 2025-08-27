@@ -5,9 +5,11 @@ set -eux
 brew -v
 
 # Dev Tools
+brew install black
 brew install clang-format
 brew install cmake
 brew install kitty # After set font to 14.0 and then `kitten theme` to Solarized Dark
+brew install mypy
 brew install node # After run `npm install -g browserify` for Browserify
 
 # Utilities
