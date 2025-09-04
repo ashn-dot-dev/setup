@@ -57,6 +57,7 @@ sudo apt-get -y install curl
 sudo apt-get -y install git
 sudo apt-get -y install iputils-ping # ping
 sudo apt-get -y install less
+sudo apt-get -y install libimage-exiftool-perl # exiftool
 sudo apt-get -y install lzip
 sudo apt-get -y install man
 sudo apt-get -y install moreutils # https://joeyh.name/code/moreutils/ (errno)
