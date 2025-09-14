@@ -62,6 +62,12 @@ if [ -e "$LUMPY_HOME/env" ]; then
     . "$LUMPY_HOME/env"
 fi
 
+## AVOL
+export AVOL_HOME="$HOME/.avol"
+if [ -e "$AVOL_HOME/env" ]; then
+    . "$AVOL_HOME/env"
+fi
+
 ## CUSTOM PS1
 git_ps1() {
     GIT_BRANCH=$(git branch 2> /dev/null | grep '^\* ' | sed -e 's/^\* //g')
