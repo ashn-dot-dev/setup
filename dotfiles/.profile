@@ -15,3 +15,8 @@ export SUNDER_HOME="$HOME/.sunder"
 if [ -e "$SUNDER_HOME/env" ]; then
     . "$SUNDER_HOME/env"
 fi
+## AVOL
+export AVOL_HOME="$HOME/.avol"
+if [ -e "$AVOL_HOME/env" ]; then
+    . "$AVOL_HOME/env"
+fi

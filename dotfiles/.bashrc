@@ -56,12 +56,6 @@ if [ -e "$SUNDER_HOME/env" ]; then
     . "$SUNDER_HOME/env"
 fi
 
-## LUMPY
-export LUMPY_HOME="$HOME/.lumpy"
-if [ -e "$LUMPY_HOME/env" ]; then
-    . "$LUMPY_HOME/env"
-fi
-
 ## AVOL
 export AVOL_HOME="$HOME/.avol"
 if [ -e "$AVOL_HOME/env" ]; then
