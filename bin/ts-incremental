@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Subsecond performance logging since the last line was emitted.
+#
+# https://manpages.debian.org/trixie/moreutils/ts.1.en.html
+ts -i '%.S'

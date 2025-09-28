@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Subsecond performance since the program start.
+#
+# https://manpages.debian.org/trixie/moreutils/ts.1.en.html
+ts -s '%.S'
