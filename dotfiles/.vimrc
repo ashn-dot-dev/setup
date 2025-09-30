@@ -72,6 +72,8 @@ set undodir=~//
 autocmd FileType lisp,scheme setlocal tabstop=2 shiftwidth=2 expandtab
 " Markdown style preferences.
 autocmd BufNewFile,BufRead *.md setlocal ts=4 sw=4 expandtab
+" Mellifera style preferences.
+autocmd BufNewFile,BufRead *.mf setlocal ts=4 sw=4 expandtab indentexpr=
 
 " C indent options.
 " l1 => Aligns the closing brace of a `case VALUE: {` block with the case
