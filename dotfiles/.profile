@@ -6,6 +6,8 @@ fi
 
 ## CUSTOM ~/bin SCRIPTS
 export PATH="$HOME/bin:$PATH"
+## GO
+export PATH=$PATH:/usr/local/go/bin
 ## RUST
 if [ -e "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
