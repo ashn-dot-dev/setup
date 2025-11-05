@@ -68,6 +68,8 @@ set backupdir=~//
 set directory=~//
 set undodir=~//
 
+" Go style preferences.
+autocmd BufNewFile,BufRead *.go setlocal ts=4 sw=4 noexpandtab indentexpr=
 " Lisp style preferences.
 autocmd FileType lisp,scheme setlocal tabstop=2 shiftwidth=2 expandtab
 " Markdown style preferences.
