@@ -127,9 +127,15 @@ nnoremap <S-M> <nop>
 "" It has only ever been an annoyance.
 nnoremap <S-Q> <nop>
 "" K attempts to look up the keyword (normal) or selected text (visual) using
-"" whatever the current keywordprg is.
+"" whatever the current keyword is.
 nnoremap <S-K> <nop>
 vnoremap <S-K> <nop>
+"" The command window is something that I have never once used or wanted, but
+"" which tends to pop up when I mistype :q as q:. Remove the command window
+"" binding, as well as the other window bindings beginning with q.
+nnoremap q: <Nop>
+nnoremap q/ <Nop>
+nnoremap q? <Nop>
 
 " Bash-like backspace and delete.
 inoremap <C-H> <bs>
