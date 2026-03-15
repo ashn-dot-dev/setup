@@ -1,0 +1,3 @@
+#!/bin/sh
+# Clear screen and scrollback buffer.
+clear && printf '\E[H\E[3J'
