@@ -57,10 +57,7 @@ if [ -e "$SUNDER_HOME/env" ]; then
 fi
 
 ## MELLIFERA
-export MELLIFERA_HOME="$HOME/.mellifera"
-if [ -e "$MELLIFERA_HOME/env" ]; then
-    . "$MELLIFERA_HOME/env"
-fi
+export PATH="$HOME/.mellifera/bin:$PATH"
 
 ## CUSTOM PS1
 git_ps1() {
