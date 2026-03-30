@@ -28,6 +28,7 @@ brew install moreutils
 brew install obs
 brew install python3
 brew install runelite
+brew install shellcheck
 brew install spotify
 brew install steam
 brew install tree
