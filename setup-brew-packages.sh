@@ -4,6 +4,8 @@ set -eux
 
 brew -v
 
+brew tap tinygo-org/tools # tinygo
+
 # Dev Tools
 brew install black
 brew install clang-format
@@ -12,6 +14,7 @@ brew install go
 brew install kitty # After set font to 14.0 and then `kitten theme` to Solarized Dark
 brew install mypy
 brew install node # After run `npm install -g browserify` for Browserify
+brew install tinygo
 
 # Utilities
 brew install ascii
