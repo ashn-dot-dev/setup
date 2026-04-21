@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eux
+
+FILE="${1}"
+OUTF="${FILE%.mp4}.720p.mp4"
+
+# Wx720 where -1 automatically calculates the width W via scale=-1:720.
+# Using -crf 30 to keep the quality okay while reqlly reducing file size.
+ffmpeg -i "${FILE}" -vf scale=-1:720 -crf 30 -preset slow -c:a copy "${OUTF}"
