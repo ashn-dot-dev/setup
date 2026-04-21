@@ -10,6 +10,7 @@ brew tap tinygo-org/tools # tinygo
 brew install black
 brew install clang-format
 brew install cmake
+brew install git-filter-repo
 brew install go
 brew install kitty # After set font to 14.0 and then `kitten theme` to Solarized Dark
 brew install mypy
