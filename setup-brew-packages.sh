@@ -24,6 +24,7 @@ brew install cmark
 brew install coreutils
 brew install discord
 brew install exiftool
+brew install ffmpeg
 brew install firefox
 brew install google-chrome
 brew install moreutils
